@@ -4,7 +4,7 @@ NEIC PDE mchedr (machine-readable Earthquake Data Report) read support.
 
 Only supports file format revision of February 24, 2004.
 
-.. seealso:: http://earthquake.usgs.gov/data/pde.php
+.. seealso:: https://earthquake.usgs.gov/data/comcat/catalog/us/
 
 :copyright:
     The ObsPy Development Team (devs@obspy.org), Claudio Satriano
@@ -1079,7 +1079,7 @@ def _read_mchedr(filename):
     >>> cat = read_events('/path/to/mchedr.dat')
     >>> print(cat)
     1 Event(s) in Catalog:
-    2012-01-01T05:27:55.980000Z | +31.456, +138.072 | 6.2 Mb
+    2012-01-01T05:27:55.980000Z | +31.456, +138.072 | 6.2  Mb
     """
     return Unpickler().load(filename)
 
